@@ -51,3 +51,9 @@ print("\n")
 ```
 
 Hyperparameter tuning
+
+
+# Scoring Metrics
+
+R-Squared
+Root Mean Squared Logarithmic Error (RMSLE)
