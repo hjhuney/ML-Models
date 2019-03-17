@@ -1,12 +1,12 @@
 # Regression Models
 
-Linear Regression
-Decision Tree
-Random Forest
-Extra Trees
-Support Vector Machines
-Lasso Regression
-Ridge Regression
+* Linear Regression
+* Decision Tree
+* Random Forest
+* Extra Trees
+* Support Vector Machines
+* Lasso Regression
+* Ridge Regression
 
 # Linear Regression
 
@@ -55,5 +55,5 @@ Hyperparameter tuning
 
 # Scoring Metrics
 
-R-Squared
-Root Mean Squared Logarithmic Error (RMSLE)
+* R-Squared
+* Root Mean Squared Logarithmic Error (RMSLE)
