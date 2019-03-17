@@ -30,3 +30,24 @@ print("RMSE: " + str(rmse(pred_lm, y_test)))
 print("Mean RMSLE Score: ", lm_rmsle.mean())
 print("\n")
 ```
+
+# Random Forest Regression
+
+```
+# Random Forest Regression
+rfr = RandomForestRegressor()
+model_rfr = rfr.fit(X_train,y_train)
+pred_rfr = rfr.predict(X_test)
+result_rfr = model_rfr.score(X_test, y_test)
+cv_scores_rfr = cross_val_score(rfr, X, y, cv=5, scoring='neg_mean_squared_log_error')
+rfr_rmsle = np.sqrt(np.abs(cv_scores_rfr.mean()))
+
+print("=== Random Forest Regression ===")
+print("R2: " + str(result_rfr))
+print("RMSLE: " + str(rmsle(pred_rfr, y_test)))
+print("RMSE: " + str(rmse(pred_rfr, y_test)))
+print("Mean RMSLE Score: ", rfr_rmsle.mean())
+print("\n")
+```
+
+Hyperparameter tuning
